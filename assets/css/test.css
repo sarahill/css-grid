@@ -1,0 +1,38 @@
+header,
+footer,
+article,
+aside {
+  padding: .2em;
+  color: white;
+  background: teal;
+}
+
+header { grid-area: hd; }
+footer { grid-area: ft; }
+aside { grid-area: sidebar; }
+
+article {
+  grid-area: main;
+  background: #88c5c5;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "hd"
+    "main"
+    "sidebar"
+    "ft";
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: 2fr 4fr;
+    grid-template-areas:
+      "hd hd"
+      "sidebar main"
+      "sidebar ft";
+  }
+
+}

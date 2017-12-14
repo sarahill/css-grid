@@ -1,13 +1,64 @@
+body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; }
+
 * { box-sizing: border-box; }
 
+.site-header { grid-area: hd; }
+footer { grid-area: ft; }
+.cat-mosaic {grid-area: cm; }
+.site-description { grid-area: sd;}
+
 .grid {
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 200px 100px;
-  grid-auto-rows: 100px;
-  grid-gap: 20px;
+  grid-template-columns: 2fr 4fr;
+  grid-template-areas:
+    "hd hd"
+    "sd cm"
+    "ft ft";
 }
 
-.grid div {
-  background: teal;
+.site-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.header-branding {
+    display: grid;
+    grid-template-columns: 40px auto;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: pink;
+}
+
+.site-title { font-size: 16px; }
+
+.site-description h2 {
+  margin-bottom: 0;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.site-tagline {
+  margin-top: 16px;
+  font-size: 34px;
+  font-weight: 200;
+  color: #666;
+}
+
+.cat-mosaic {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(5, 225px);
+}
+
+.mosaic {
+  background: #ccf6d3;
+}
+
+.mosaic:nth-child(5n-3) { background: #ffd7d8; }
+.mosaic:nth-child(4n-6) { background: #feeec0; }
+.mosaic:nth-child(3n-9) { background: #f3eee5; }
+.mosaic:nth-child(2n-8) { background: #c4eefb; }
+.mosaic:nth-child(4n-6) { background: #d7d7ff; }
