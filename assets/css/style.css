@@ -31,7 +31,8 @@ footer {
 
 .site-header {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  padding: 16px; }
 
 .header-branding {
   display: grid;
@@ -45,6 +46,9 @@ footer {
 
 .site-title {
   font-size: 16px; }
+
+.site-description {
+  padding: 16px; }
 
 .site-description h2 {
   margin-bottom: 0;
@@ -97,6 +101,18 @@ footer {
   background: #e8f7cd; }
 
 .main {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  padding: 60px 40px;
   background: #f3f1ee; }
+
+.main .about {
+  grid-column: 2;
+  padding: 24px 40px;
+  background: white; }
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6; }
 
 /*# sourceMappingURL=style.css.map */
