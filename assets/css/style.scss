@@ -1,3 +1,5 @@
+@import 'partials/mosaic';
+
 html,
 body {
   margin: 0;
@@ -84,42 +86,6 @@ footer { grid-area: ft; }
   font-weight: 200;
   color: #666;
 }
-
-.cat-mosaic {
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: 190px 225px 200px 225px;
-  grid-gap: 20px;
-}
-
-.mosaic {
-  background: #ccf6d3;
-}
-
-.mosaic:nth-of-type(1) { background: #ffd7d8; }
-
-.mosaic:nth-of-type(2){
-  grid-row: span 2;
-  background: #feeec0;
-}
-
-.mosaic:nth-of-type(3) { background: #f3eee5; }
-
-.mosaic:nth-of-type(4) {
-  grid-row: span 2;
-  background: #c4eefb;
-}
-
-.mosaic:nth-of-type(5) { background: #d7d7ff; }
-.mosaic:nth-of-type(6) { background: #ffd9fe; }
-
-.mosaic:nth-of-type(7) {
-  grid-row: span 2;
-  background: #d0efeb;
-}
-
-.mosaic:nth-of-type(8) { background: #c0e2ff; }
-.mosaic:nth-of-type(9) { background: #e8f7cd; }
 
 .main {
   display: grid;
