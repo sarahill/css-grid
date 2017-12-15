@@ -27,12 +27,28 @@ footer {
 .grid {
   display: grid;
   grid-template-columns: 4fr 2fr;
+  grid-template-rows: max-content;
   grid-template-areas: "hd cm" "sd cm" "main main" "ft ft"; }
 
 .site-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 16px; }
+  padding: 32px 24px; }
+
+.header-links {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: right; }
+
+.header-links .link {
+  padding-left: 12px;
+  padding-right: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  transition: color 250ms ease-in-out; }
+  .header-links .link:hover {
+    color: #e96bd4; }
 
 .header-branding {
   display: grid;
@@ -45,9 +61,12 @@ footer {
   background-color: pink; }
 
 .site-title {
-  font-size: 16px; }
+  margin-left: 12px;
+  font-size: 18px; }
 
 .site-description {
+  margin-top: auto;
+  margin-bottom: auto;
   padding: 16px; }
 
 .site-description h2 {
